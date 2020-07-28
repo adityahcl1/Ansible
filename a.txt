@@ -1,2 +1,0 @@
-Hi this is the first file i have create for testing how jenkins works.
-New line added to test ansible inventory 
