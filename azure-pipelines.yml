@@ -23,7 +23,7 @@ resources:
   - repository: first_repository 
     name: A
     type: GitHub 
-    connection: adityahcl
+    endpoint: adityahcl
     source: adityahcl1/Maven 
     pr: 
       branches:
