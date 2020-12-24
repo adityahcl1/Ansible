@@ -21,6 +21,7 @@ resources:
 
     
   - repository: first_repository 
+    name: A
     type: GitHub 
     connection: myGitHubConnection
     source: adityahcl1/Maven 
@@ -28,7 +29,8 @@ resources:
       branches:
        include:
        - master 
-  - repository: second_repository    
+  - repository: second_repository
+    name: B    
     type: GitHub 
     connection: myGitHubConnection
     source: adityahcl1/testing123 
