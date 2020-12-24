@@ -23,7 +23,7 @@ resources:
   - repository: first_repository 
     name: A
     type: GitHub 
-    connection: myGitHubConnection
+    connection: adityahcl
     source: adityahcl1/Maven 
     pr: 
       branches:
@@ -32,7 +32,7 @@ resources:
   - repository: second_repository
     name: B    
     type: GitHub 
-    connection: myGitHubConnection
+    endpoint: adityahcl
     source: adityahcl1/testing123 
     pr: 
        branches:
