@@ -1,0 +1,45 @@
+trigger: none
+
+pool:
+ vmImage: 'ubuntu-latest'
+
+
+
+variables:
+ buildConfiguration: 'Release'
+
+resources:
+  repositories:
+  # - repository: MultiRepoBuild
+  #   name: MultiRepoBuild
+  #   type: git
+  #   # trigger:
+  #   # #  pr: 
+  #   #     branches:
+  #   #       include:
+  #   #       - master 
+
+    
+  - repository: first_repository 
+    name: A
+    type: GitHub 
+    endpoint: adityahcl
+    source: adityahcl1/Maven 
+    pr: 
+      branches:
+       include:
+       - master 
+  - repository: second_repository
+    name: B    
+    type: GitHub 
+    endpoint: adityahcl
+    source: adityahcl1/testing123 
+    pr: 
+       branches:
+         include:
+         - master
+
+steps:
+ - checkout: self
+ - checkout: first_repository
+ - checkout: second_repository
