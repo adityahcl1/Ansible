@@ -1,0 +1,3 @@
+[submodule "SKIPCI"]
+	path = SKIPCI
+	url = https://github.com/adityahcl1/SKIPCI.git
